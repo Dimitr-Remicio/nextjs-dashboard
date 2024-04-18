@@ -165,8 +165,45 @@ const invoices = [
   },
 ];
 
+const images = [
+ 
+  {
+    imgURL:
+      "/Top/image1.jpg",
+    // "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    imgAlt: "img-1",
+    w: 1250,
+    h: 500,
+  },
+  {
+    imgURL:
+      "/Top/image2.jpg",
+    // "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    imgAlt: "img-2",
+    w: 1250,
+    h: 500,
+  },
+  {
+    imgURL:
+      "/Top/image3.jpg",
+    // "https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    imgAlt: "img-3",
+    w: 1250,
+    h: 500,
+  },
+  {
+    imgURL:
+    "/Top/image4.jpg",
+    // "https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    imgAlt: "img-4",
+    w: 1250,
+    h: 500,
+  }
+];
+
 const revenue = [
   { month: 'Jan', revenue: 2000 },
+
   { month: 'Feb', revenue: 1800 },
   { month: 'Mar', revenue: 2200 },
   { month: 'Apr', revenue: 2500 },
@@ -185,4 +222,5 @@ module.exports = {
   customers,
   invoices,
   revenue,
+  images
 };
