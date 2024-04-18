@@ -1,4 +1,4 @@
-import Contfooter from './footer/Footer';
+import Contfooter from './components/footer/Footer';
 import Sidenav from './ui/dashboard/sidenav';
 
 import { quicksand } from './ui/fonts';

@@ -1,0 +1,51 @@
+.top-font{
+    font-family: Organetto;
+    font-weight: normal;
+    font-style: normal;
+    /* color: white; */
+    width: 100%;
+    max-width: 85vw;
+    left: 10rem;
+}
+.contain:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.contain:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.contain div{
+    background-color: white;
+    border-radius: 4rem;
+    padding: 2rem;
+}
+
+
+.top-cont:nth-child(1){
+    /* border: 2rem solid black; */
+    /* color :blue; */
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    -webkit-text-stroke: 4px black;
+}
+.top-cont:nth-child(2){
+    /* border: 2rem solid black; */
+    /* color :blue; */
+    color: #2626263d;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    -webkit-text-stroke: 3px #2626263d;
+}
+.top-cont:nth-child(3){
+    /* border: 2rem solid black; */
+    /* color :blue; */
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    -webkit-text-stroke: 0px #00000037;
+    color: #00000037;
+}
+

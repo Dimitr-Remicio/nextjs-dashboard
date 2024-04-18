@@ -58,7 +58,7 @@ export default function CustomSlider({ children }) {
 
   return (
     <div
-      className="container__slider"
+      className="container__slider "
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
@@ -93,7 +93,7 @@ export default function CustomSlider({ children }) {
       </div>
 
       <button
-        className="slider__btn-next"
+        className="slider__btn-next z-50"
         onClick={(e) => {
           e.preventDefault();
           slideNext();
@@ -102,7 +102,7 @@ export default function CustomSlider({ children }) {
         {">"}
       </button>
       <button
-        className="slider__btn-prev"
+        className="slider__btn-prev z-50"
         onClick={(e) => {
           e.preventDefault();
           slidePrev();

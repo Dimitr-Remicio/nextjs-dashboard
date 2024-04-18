@@ -1,5 +1,5 @@
 import { HomeIcon } from "@heroicons/react/24/outline";
-import Container from "../container/page";
+import Container from "../../container/page";
 Container;
 export default function Contfooter() {
   const ref = "../../public";
