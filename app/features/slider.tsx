@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -19,7 +18,6 @@ export default function CustomSlider({ children }) {
     });
   };
 
-
   useEffect(() => {
     if (slideDone) {
       setSlideDone(false);
@@ -31,7 +29,6 @@ export default function CustomSlider({ children }) {
       );
     }
   }, [slideDone, slideNext]);
-
 
   const slidePrev = () => {
     setActiveIndex((val) => {
@@ -91,26 +88,26 @@ export default function CustomSlider({ children }) {
           );
         })}
       </div>
-
-      <button
-        className="slider__btn-next z-50"
-        onClick={(e) => {
-          e.preventDefault();
-          slideNext();
-        }}
-      >
-        {">"}
-      </button>
-      <button
-        className="slider__btn-prev z-50"
-        onClick={(e) => {
-          e.preventDefault();
-          slidePrev();
-        }}
-      >
-        {"<"}
-      </button>
+      <div className="absolute flex right-0 inset-y-2/4 pt-20 pr-10 flex-row gap-5">
+        <button
+          className="slider__btn-prev btn z-50"
+          onClick={(e) => {
+            e.preventDefault();
+            slidePrev();
+          }}
+        >
+          {"<"}
+        </button>
+        <button
+          className="slider__btn-next btn z-50"
+          onClick={(e) => {
+            e.preventDefault();
+            slideNext();
+          }}
+        >
+          {">"}
+        </button>
+      </div>
     </div>
   );
-};
-
+}

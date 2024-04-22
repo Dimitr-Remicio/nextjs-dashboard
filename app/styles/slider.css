@@ -14,7 +14,7 @@
 
   }
   
-  .container__slider > button {
+  .btn{
     background-color: white;
     height: 3rem;
     width: 3rem;
@@ -37,13 +37,13 @@
   }
   
   .slider__btn-next {
-    position: absolute;
+    /* position: absolute; */
     right: 0;
   }
   
   .slider__btn-prev {
-    position: absolute;
-    left: 0;
+    /* position: absolute; */
+    /* left: 0; */
   }
   
   .container__slider__links {
