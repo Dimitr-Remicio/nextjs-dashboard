@@ -29,7 +29,7 @@ export default function TopProducts() {
             src="/corner.svg"
             width="187"
             height="50"
-            alt=""
+            alt="corner of rectangle"
           />
         </div>
         <div className="flex flex-col-reverse items-end">
@@ -52,7 +52,7 @@ export default function TopProducts() {
               src="/corner.svg"
               width="180"
               height="50"
-              alt=""
+              alt="corner of rectangle"
             />
         </div>
       </div>
