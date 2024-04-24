@@ -8,7 +8,7 @@ import Container from "@/app/container/page";
 
 export default function Page() {
   return (
-    <main className="flex mt-32 mb-56 flex-col p-x-6 items-center justify-center w-full">
+    <main className="flex mt-16 mb-56 flex-col p-x-6 items-center justify-center w-full">
       <Container Children={
 
         <TopProducts />
