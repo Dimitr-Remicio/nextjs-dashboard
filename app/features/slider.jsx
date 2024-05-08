@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from 'react';
 
 // import "./slider.css";
 
@@ -8,7 +8,9 @@ export default function CustomSlider({ children }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideDone, setSlideDone] = useState(true);
   const [timeID, setTimeID] = useState(null);
-  const slideNext = () => {
+  
+
+  const slideNext = useCallback(() => {
     setActiveIndex((val) => {
       if (val >= children.length - 1) {
         return 0;
@@ -16,7 +18,8 @@ export default function CustomSlider({ children }) {
         return val + 1;
       }
     });
-  };
+  },[children.length]);
+
 
   useEffect(() => {
     if (slideDone) {
@@ -25,7 +28,7 @@ export default function CustomSlider({ children }) {
         setTimeout(() => {
           slideNext();
           setSlideDone(true);
-        }, 5000)
+        }, 5000),
       );
     }
   }, [slideDone, slideNext]);
@@ -62,7 +65,7 @@ export default function CustomSlider({ children }) {
       {children.map((item, index) => {
         return (
           <div
-            className={"slider__item slider__item-active-" + (activeIndex + 1)}
+            className={'slider__item slider__item-active-' + (activeIndex + 1)}
             key={index}
           >
             {item}
@@ -70,15 +73,15 @@ export default function CustomSlider({ children }) {
         );
       })}
 
-      <div className="container__slider__links">
+      <div className="container__slider__links ">
         {children.map((item, index) => {
           return (
             <button
               key={index}
               className={
                 activeIndex === index
-                  ? "container__slider__links-small container__slider__links-small-active"
-                  : "container__slider__links-small"
+                  ? 'container__slider__links-small container__slider__links-small-active'
+                  : 'container__slider__links-small'
               }
               onClick={(e) => {
                 e.preventDefault();
@@ -88,7 +91,7 @@ export default function CustomSlider({ children }) {
           );
         })}
       </div>
-      <div className="absolute flex right-0 inset-y-2/4 pt-20 pr-10 flex-row gap-5">
+      <div className="absolute inset-y-2/4 right-0 flex flex-row gap-5 pr-10 pt-20">
         <button
           className="slider__btn-prev btn z-50"
           onClick={(e) => {
@@ -96,7 +99,7 @@ export default function CustomSlider({ children }) {
             slidePrev();
           }}
         >
-          {"<"}
+          {'<'}
         </button>
         <button
           className="slider__btn-next btn z-50"
@@ -105,7 +108,7 @@ export default function CustomSlider({ children }) {
             slideNext();
           }}
         >
-          {">"}
+          {'>'}
         </button>
       </div>
     </div>

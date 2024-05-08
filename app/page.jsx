@@ -1,18 +1,23 @@
 import AcmeLogo from "@/app/ui/acme-logo";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import TopProducts from "./components/products-top/page";
-
+import TopProducts from "./components/products-top/products-page";
+import ShirtCont from "./components/shirt/shirt";
 import "./styles/slider.css";
-import Container from "@/app/container/page";
+// import Container from "@/app/container/page";
+// import Container from "postcss/lib/container";
+import Container from "@/app/components/Container/page"
+
 
 export default function Page() {
   return (
     <main className="flex mt-16 mb-56 flex-col p-x-6 items-center justify-center w-full">
-      <Container Children={
 
-        <TopProducts />
-      }>
+      <Container>
+        <TopProducts/>
+      </Container>
+      <Container>
+        <ShirtCont/>
       </Container>
     </main>
   );

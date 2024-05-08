@@ -46,6 +46,16 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 @font-face {
+  font-family: 'Truenolight';
+  src: local('Trueno lighter'),
+  url('../fonts/TruenoUltLt.otf') format('truetype');
+  /* font-weight: normal; */
+  /* font-style: normal; */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Trueno';
   src: local('Trueno Regular'),
       url('../fonts/TruenoRg.otf') format('truetype');
@@ -53,3 +63,11 @@ input[type='number']::-webkit-outer-spin-button {
   font-style: normal;
 }
 
+#footer{
+  margin: 0 !important;
+}
+
+.text-stroke-1{
+  -webkit-text-stroke: 0.01brem black;
+
+}

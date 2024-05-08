@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
     "scripts/seed.js"
-  ],
+, "app/page.jsx", "app/components/footer/Footer.jsx", "app/container/page.jsx", "app/features/slider.jsx", "app/layout.jsx", "app/components/products-top/products-page.jsx", "app/ui/button.tsx"  ],
   "exclude": ["node_modules"]
 }
